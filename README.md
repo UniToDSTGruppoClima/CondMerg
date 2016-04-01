@@ -1,4 +1,4 @@
-[[https://github.com/UniToDSTGruppoClima/CondMerg/blob/master/logo/oCondMerg.png|alt=CondMerg_Logo]] |
+[[https://github.com/UniToDSTGruppoClima/CondMerg/blob/master/logo/CondMerg.png|alt=CondMerg_Logo]] |
 # CondMerg
 CondMerg is an open source software developed in R language, cross platform and easily adaptable to different needing; it implements the conditional merging method, in addition to some other experimental variants of that approach (called bias field conditional merging and mean conditional merging). It is optimized for batch processing of multiple files.
 
