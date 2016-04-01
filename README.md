@@ -29,7 +29,7 @@ Summarizing, we have:
   -   Err_radar_menus_condmerg_X.geo.tif - Raster of radar - conditional merging
   -   Err_radar_menus_bfcondmerg_X.geo.tif - Raster of radar - bias field conditional merging
   -   Err_radar_menus_meancondmerg_X.geo.tif - Raster of radar - mean conditional merging
-- Folder 3 - Statistical cross-validation using k-fold method
+- Folder 3 - Statistical cross validation using k-fold method
   -   k-fold_condmerg_errors_X.png - Scatter plot of cross validated conditional merging vs not validated one
   -   k-fold_bfcondmerg_errors_X.png - Scatter plot of cross validated bias field conditional merging vs not validated one
   -   k-fold_meancondmerg_errors_X.png - Scatter plot of cross validated mean conditional merging vs not validated one
