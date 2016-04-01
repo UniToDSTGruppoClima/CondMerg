@@ -20,25 +20,25 @@ Summarizing, input files are:
 The program creates 3 folders where it saves computation results related to the merging between radar data and gauges data. Main results are geo-referred TIF files about the merging processes (ordinary kriging of rain gauges, conditional merging, bias field conditional merging and mean conditional merging) and about differences between raw radar data and single merging methods. Other important output are related to the cross-validation and are mainly tables about statistical information (indexes) and scatter plots about data compared with the rain gauges. There are also scatter plots about the cross-validated data compared with the not validated one. Remember that the X in the filenames is the string defining a date and/or an hour (or everything else) that is used in input files.
 Summarizing, we have:
 - Folder 1 - Main output images
-  -   Krig_gauges_X.geo.tif -> Raster containing kriging of rain gauges
-  -   Cond_merg_X.geo.tif -> Raster containing conditional merging
-  -   Bias_field_cond_merg_X.geo.tif -> Raster containing bias field conditional merging
-  -   Mean_cond_merg_X.geo.tif -> Raster containing mean conditional merging
-  -   Data_X_k-fold.csv -> Temporary information used for k-fold cross validation
+  -   Krig_gauges_X.geo.tif - Raster containing kriging of rain gauges
+  -   Cond_merg_X.geo.tif - Raster containing conditional merging
+  -   Bias_field_cond_merg_X.geo.tif - Raster containing bias field conditional merging
+  -   Mean_cond_merg_X.geo.tif - Raster containing mean conditional merging
+  -   Data_X_k-fold.csv - Temporary information used for k-fold cross validation
 - Folder 2 - Differences between raw data and previous images
-  -   Err_radar_menus_condmerg_X.geo.tif -> Raster of radar - conditional merging
-  -   Err_radar_menus_bfcondmerg_X.geo.tif -> Raster of radar - bias field conditional merging
-  -   Err_radar_menus_meancondmerg_X.geo.tif -> Raster of radar - mean conditional merging
+  -   Err_radar_menus_condmerg_X.geo.tif - Raster of radar - conditional merging
+  -   Err_radar_menus_bfcondmerg_X.geo.tif - Raster of radar - bias field conditional merging
+  -   Err_radar_menus_meancondmerg_X.geo.tif - Raster of radar - mean conditional merging
 - Folder 3 - Statistical cross-validation using k-fold method
-  -   k-fold_condmerg_errors_X.png -> Scatter plot of cross validated conditional merging vs not validated one
-  -   k-fold_bfcondmerg_errors_X.png -> Scatter plot of cross validated bias field conditional merging vs not validated one
-  -   k-fold_meancondmerg_errors_X.png -> Scatter plot of cross validated mean conditional merging vs not validated one
-  -   Indexes_k-fold_X.csv -> Detailed statistical indexes on previous information
-  -   scatter_raw_radar_X.png -> Scatter plot of raw radar vs rain gauges
-  -   scatter_condmerg_k-fold_X.png -> Scatter plot of validated conditional merging vs rain gauges
-  -   scatter_condmerg_X.png -> Scatter plot of conditional merging vs rain gauges
-  -   scatter_bfcondmerg_k-fold_X.png -> Scatter plot of validated bias field conditional merging vs rain gauges
-  -   scatter_bfcondmerg_X.png -> Scatter plot of bias field conditional merging vs rain gauges
-  -   scatter_meancondmerg_k-fold_X.png -> Scatter plot of validated mean conditional merging vs rain gauges
-  -   scatter_meancondmerg_X.png -> Scatter plot of mean conditional merging vs rain gauges
-  -   Indexes_vs_pluvio_X.xlsx -> Detailed statistical indexes on previous information
+  -   k-fold_condmerg_errors_X.png - Scatter plot of cross validated conditional merging vs not validated one
+  -   k-fold_bfcondmerg_errors_X.png - Scatter plot of cross validated bias field conditional merging vs not validated one
+  -   k-fold_meancondmerg_errors_X.png - Scatter plot of cross validated mean conditional merging vs not validated one
+  -   Indexes_k-fold_X.csv - Detailed statistical indexes on previous information
+  -   scatter_raw_radar_X.png - Scatter plot of raw radar vs rain gauges
+  -   scatter_condmerg_k-fold_X.png - Scatter plot of validated conditional merging vs rain gauges
+  -   scatter_condmerg_X.png - Scatter plot of conditional merging vs rain gauges
+  -   scatter_bfcondmerg_k-fold_X.png - Scatter plot of validated bias field conditional merging vs rain gauges
+  -   scatter_bfcondmerg_X.png - Scatter plot of bias field conditional merging vs rain gauges
+  -   scatter_meancondmerg_k-fold_X.png - Scatter plot of validated mean conditional merging vs rain gauges
+  -   scatter_meancondmerg_X.png - Scatter plot of mean conditional merging vs rain gauges
+  -   Indexes_vs_pluvio_X.xlsx - Detailed statistical indexes on previous information
