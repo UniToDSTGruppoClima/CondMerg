@@ -1,10 +1,10 @@
-[[https://github.com/UniToDSTGruppoClima/CondMerg/blob/master/logo/CondMerg.png|alt=CondMerg_Logo]] |
+[[https://github.com/UniToDSTGruppoClima/CondMerg/blob/master/logo/CondMerg.png]] |
 # CondMerg
 CondMerg is an open source software developed in R language, cross platform and easily adaptable to different needing; it implements the conditional merging method, in addition to some other experimental variants of that approach (called bias field conditional merging and mean conditional merging). It is optimized for batch processing of multiple files.
 
 #### PRE-REQUISITE
 A Java Virtual Machine is required (https://www.java.com/it/download/).
-In addition, following R-packages have to be installed: *"rgdal", "xlsx", "automap", "raster", "plyr", "mblm", "doParallel"*.
+In addition, following R packages have to be installed: *"rgdal", "xlsx", "automap", "raster", "plyr", "mblm", "doParallel"*.
 The easiest way to do this is inside R environment, using the command `install.packages(c("rgdal","xlsx","automap","raster","plyr","mblm","doParallel"))`.
 On some Linux systems (e.g.: Ubuntu 14.04 / Mint 17.3), this doesn't work and requires some dependencies that could be installed with shell command `apt-get install default-jdk r-base r-base-dev libgdal1-dev libproj-dev r-cran-plyr` followed by the previous install.packages command in R (without "plyr").
 
