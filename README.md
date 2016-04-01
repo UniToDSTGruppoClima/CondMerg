@@ -1,6 +1,6 @@
 ![alt tag](./logo/CondMerg.png)
 
-CondMerg is an open source software developed in R language, cross platform and easily adaptable to different needing; it implements the conditional merging method, in addition to some other experimental variants of that approach (called bias field conditional merging and mean conditional merging). It is optimized for batch processing of multiple files.
+CondMerg is a free open source software developed in R language, which is cross platform and easily adaptable to different needing of researchers and radar specialists. It implements the conditional merging method for weather radars and rain gauges, in addition to some other experimental variants of that approach (called bias field conditional merging and mean conditional merging). It is optimized for batch processing of multiple files.
 
 #### PRE-REQUISITE
 A Java Virtual Machine is required (https://www.java.com/it/download/).
