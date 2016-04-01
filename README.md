@@ -4,8 +4,8 @@ CondMerg is an open source software developed in R language, cross platform and 
 #### PRE-REQUISITE
 A Java Virtual Machine is required (https://www.java.com/it/download/).
 In addition, following R-packages have to be installed: *"rgdal", "xlsx", "automap", "raster", "plyr", "mblm", "doParallel"*.
-The easiest way to do this is inside R environment, using the command *install.packages(c("rgdal","xlsx","automap","raster","plyr","mblm","doParallel"))*.
-On some Linux systems (e.g.: Ubuntu 14.04 / Mint 17.3), this doesn't work and requires some dependencies that could be installed with shell command *apt-get install default-jdk r-base r-base-dev libgdal1-dev libproj-dev r-cran-plyr* followed by the previous install.packages command in R (without "plyr").
+The easiest way to do this is inside R environment, using the command `install.packages(c("rgdal","xlsx","automap","raster","plyr","mblm","doParallel"))`.
+On some Linux systems (e.g.: Ubuntu 14.04 / Mint 17.3), this doesn't work and requires some dependencies that could be installed with shell command `apt-get install default-jdk r-base r-base-dev libgdal1-dev libproj-dev r-cran-plyr` followed by the previous install.packages command in R (without "plyr").
 
 #### INPUT
 The program takes in input a folder and processes all CSV files contained in that folder that starts with "RainGauges_" and are followed by a string X defining a date and/or an hour (or everything else). Every single csv has 4 columns defining the weather station identification code (called cod_station in input file), its UTM x and y coordinates (in columns utm_x and utm_y) and the value of the measured precipitation (column precip). In addition, the program needs a geo-referred TIF file for each csv which contains radar data for the same time period used in the csv files. The tif file name has to  start with the suffix "Radar_" and has to continue with the same string X defining a date and/or an hour used in the referred csv file. It has to use the coordinates reference system based on WGS 84 / UTM Zone 32N (but it is  very easy to modify the code to adopt other CRS).
