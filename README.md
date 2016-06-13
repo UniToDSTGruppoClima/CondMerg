@@ -12,10 +12,10 @@ This code has been tested under R version 3.0.2, 3.1.3 and 3.2.4; for older or n
 
 #### INPUT
 The program takes in input a folder and processes all CSV files contained in that folder that starts with "RainGauges_" and are followed by a string X defining a date and/or an hour (or everything else). Every single csv has 4 columns defining the weather station identification code (called cod_station in input file), its UTM x and y coordinates (in columns utm_x and utm_y) and the value of the measured precipitation (column precip). In addition, the program needs a geo-referred TIF file for each csv which contains radar data for the same time period used in the csv files. The tif file name has to  start with the suffix "Radar_" and has to continue with the same string X defining a date and/or an hour used in the referred csv file. It has to use the coordinates reference system based on WGS 84 / UTM Zone 32N (but it is  very easy to modify the code to adopt other CRS).
+Some examples of input files are available here, to practice with the program.
 Summarizing, input files are:
   - RainGauges_X.csv - Tabular information given by rain gauges
   - Radar_X.tif - Raster information given by radar
-Some examples of input files are available here, to practice with the program.
 
 #### OUTPUT
 The program creates 3 customizables folders where it saves computation results related to the merging between radar data and gauges data. Main results are geo-referred TIF files about the merging processes (ordinary kriging of rain gauges, conditional merging, bias field conditional merging and mean conditional merging) and about differences between raw radar data and single merging methods. Other important output are related to the cross-validation and are mainly tables about statistical information (indexes) and scatter plots about data compared with the rain gauges. There are also scatter plots about the cross-validated data compared with the not validated one. Remember that the X in the filenames is the string defining a date and/or an hour (or everything else) that is used in input files.
