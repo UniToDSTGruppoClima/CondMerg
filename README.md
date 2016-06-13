@@ -2,7 +2,7 @@
 
 CondMerg is a free open source software developed in R language, which is cross platform and easily adaptable to different needing of researchers and radar specialists. It implements the conditional merging method for weather radars and rain gauges, in addition to some other experimental variants of that approach (called bias field conditional merging and mean conditional merging). It is optimized for batch processing of multiple files.
 
-#### PRE-REQUISITE
+#### PRE-REQUISITES
 A Java Virtual Machine is required (https://www.java.com/it/download/).
 In addition, following R packages have to be installed: *"rgdal", "xlsx", "automap", "raster", "plyr", "mblm", "doParallel"*.
 The easiest way to do this is inside R environment, using the command `install.packages(c("rgdal","xlsx","automap","raster","plyr","mblm","doParallel"))`.
@@ -15,6 +15,7 @@ The program takes in input a folder and processes all CSV files contained in tha
 Summarizing, input files are:
   - RainGauges_X.csv - Tabular information given by rain gauges
   - Radar_X.tif - Raster information given by radar
+Some examples of input files are available here, to practice with the program.
 
 #### OUTPUT
 The program creates 3 customizables folders where it saves computation results related to the merging between radar data and gauges data. Main results are geo-referred TIF files about the merging processes (ordinary kriging of rain gauges, conditional merging, bias field conditional merging and mean conditional merging) and about differences between raw radar data and single merging methods. Other important output are related to the cross-validation and are mainly tables about statistical information (indexes) and scatter plots about data compared with the rain gauges. There are also scatter plots about the cross-validated data compared with the not validated one. Remember that the X in the filenames is the string defining a date and/or an hour (or everything else) that is used in input files.
