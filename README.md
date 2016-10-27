@@ -45,3 +45,7 @@ Summarizing, we have:
   -   scatter_meancondmerg_k-fold_X.png - Scatter plot of validated mean conditional merging vs rain gauges
   -   scatter_meancondmerg_X.png - Scatter plot of mean conditional merging vs rain gauges
   -   Indexes_vs_pluvio_X.xlsx - Detailed statistical indexes on previous information
+
+#### FURTHER DETAILS
+An article describing this software has been published on Earth Science Informatics (Springer).
+For further details, please refer to http://rdcu.be/l2Ac and http://link.springer.com/article/10.1007/s12145-016-0278-y
